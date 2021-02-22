@@ -6,8 +6,8 @@ bio data
 <body>
 <h1>BIO DATA</h1><br><br>
 NAME:
-<?php echo $_POST['name'];
-?><br>
+<?= echo $_POST['name'];
+?><br><br>
 
 <b>ADDRESS</b><br><br>
 
@@ -39,7 +39,7 @@ PHONE
 
 GENDER
  <?php echo$_POST['gender'];
-?><br>
+?><br><br>
 
 
 <b>EDUCATIONAL QUALIFICATION</b><br><br>
