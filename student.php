@@ -1,11 +1,8 @@
 <?php
 
 $regno=$_GET['no'];
-$host="host=127.0.0.1";
-$port="5432";
-$dbname="dbname=college";
-$credential="user=postgres password=post";
-$db=pg_connect($host $port $dbname $credential);
+
+$db=pg_connect("host=127.0.0.1 port=5432 dbname=college user=postgres password=post");
 
 if(!$db){
     echo "Error Unable to open database<br>";
